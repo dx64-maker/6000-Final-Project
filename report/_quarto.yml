@@ -1,0 +1,17 @@
+project:
+  type: manuscript
+
+manuscript:
+  article: index.qmd
+
+format:
+  html:
+    comments:
+      hypothesis: false
+    toc: true
+  pdf:
+    documentclass: article
+    papersize: letter
+
+execute:
+  freeze: true

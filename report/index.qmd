@@ -1,0 +1,56 @@
+---
+title: "From Intake Log to Insight: NYC Shelter Intakes at Scale"
+subtitle: "DSAN 6000: Big Data and Cloud Computing — Final Project"
+author:
+  - name: "[Your Name]"
+    affiliations:
+      - name: Georgetown University
+date: 2026-12-13
+abstract: |
+  [300–500 words. The problem (NYC's shelter reporting only publishes daily totals),
+  the data (a ~3.8 GB synthetic OLTP intake log with structured fields and free-text notes),
+  what you built (an OLTP→OLAP pipeline in Spark, Spark NLP on intake notes, MLlib models tracked in MLflow),
+  and the main findings.]
+keywords: [Spark, MLlib, Spark NLP, MLflow, OLAP, homelessness services]
+bibliography: references.bib
+---
+
+## Introduction {#sec-intro}
+
+[Motivation from the Midterm vignette; the four research questions.]
+
+## Data {#sec-data}
+
+[Source `s3a://dsan6000-final/nyc-shelters/intake_log.csv`, size, 26 columns, data types.
+Summarize the data-quality findings from the EDA progress report.]
+
+## Methods {#sec-methods}
+
+### Q1: OLTP → OLAP pipeline
+
+[Raw CSV → partitioned Parquet → star schema (`fact_contact`, dimension tables, needs bridge table). Cluster set-up, runtime and cost.]
+
+### Q2: Large-scale EDA
+
+![Contacts per month by contact type.](figures/fig1_monthly_contacts.png){#fig-monthly}
+
+### Q3: Spark NLP on intake notes
+
+[Pipeline, LDA topics, presenting-reason classifier, notes that disagree with their dropdown values.]
+
+### Q4: Predicting completed referrals (MLlib + MLflow)
+
+[Features, models, evaluation (AUC-PR), MLflow comparison table.]
+
+## Results {#sec-results}
+
+[Key figures and tables. Reference figures like @fig-monthly.]
+
+## Discussion and Limitations {#sec-discussion}
+
+[Synthetic data, leakage controls, fairness across household types, what DHS could do with this.]
+
+## References {.unnumbered}
+
+::: {#refs}
+:::

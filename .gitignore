@@ -1,0 +1,24 @@
+# data never goes in git
+data/*
+!data/README.md
+*.csv.gz
+*.parquet
+outputs/**/tables/
+spark-warehouse/
+metastore_db/
+derby.log
+mlruns/
+mlartifacts/
+
+# quarto build output
+report/_site/
+report/_manuscript/
+report/.quarto/
+report/*_files/
+
+# python / editors
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+.DS_Store
+.env
