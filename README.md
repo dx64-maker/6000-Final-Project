@@ -1,6 +1,6 @@
 # DSAN 6000 Final Project — NYC Shelter Intakes at Scale
 
-**Team:** [Your Name] ([netid])
+**Team:** Dun Xie (dx64)
 **Dataset:** NYC Shelter Intake Reports (DSAN 6000 synthetic data), `s3a://dsan6000-final/nyc-shelters/intake_log.csv` (~3.8 GB CSV, 26 columns)
 **Course page:** https://jjacobs.me/dsan6000/final-project/
 
